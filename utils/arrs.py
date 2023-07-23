@@ -15,6 +15,8 @@ def get(array, index, default=None):
         return default
     elif len(array) == 0:
         return default
+    elif len(array) - 1 < index:
+        return default
 
     return array[index]
 
